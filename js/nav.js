@@ -6,13 +6,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 MEGA TALLER
             </a>
             <div class="hidden md:flex items-center space-gap-8 gap-8">
-                <a class="text-[#e5e2e1] hover:text-[#ffb3ac] transition-colors font-headline tracking-tight nav-link" href="index.html">Home</a>
+                <a class="text-[#e5e2e1] hover:text-[#ffb3ac] transition-colors font-headline tracking-tight nav-link" href="index.html">Inicio</a>
                 <a class="text-[#e5e2e1] hover:text-[#ffb3ac] transition-colors font-headline tracking-tight nav-link" href="servicios.html">Servicios</a>
                 <a class="text-[#e5e2e1] hover:text-[#ffb3ac] transition-colors font-headline tracking-tight nav-link" href="escuderia.html">La Escudería</a>
                 <a class="text-[#e5e2e1] hover:text-[#ffb3ac] transition-colors font-headline tracking-tight nav-link" href="ubicacion.html">Ubicación</a>
             </div>
-            <a href="ubicacion.html" class="bg-primary-container text-on-primary-container px-6 py-2 rounded-md font-headline font-bold uppercase tracking-widest text-sm hover:bg-[#ba1a20] transition-all active:scale-95 inline-block text-center">
-                Book Appointment
+            <a href="https://wa.me/59177958263" target="_blank" class="bg-primary-container text-on-primary-container px-6 py-2 rounded-md font-headline font-bold uppercase tracking-widest text-sm hover:bg-[#ba1a20] transition-all active:scale-95 inline-block text-center">
+                Agendar Cita
             </a>
         </div>
     </nav>

@@ -5,13 +5,13 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="space-y-6">
                 <div class="text-xl font-bold text-[#e5e2e1] font-headline italic uppercase tracking-tighter">MEGA TALLER</div>
                 <p class="text-[#e5e2e1]/60 font-body text-sm max-w-xs leading-relaxed">
-                    Elevando los estándares de la ingeniería automotriz en Paraguay. Tecnología, pasión y precisión en cada detalle.
+                    Elevando los estándares de la ingeniería automotriz en Cochabamba. Tecnología, pasión y precisión en cada detalle.
                 </p>
                 <div class="flex gap-4">
-                    <a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-[#e5e2e1] hover:text-[#d32f2f] transition-all" href="#">
+                    <a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-[#e5e2e1] hover:text-[#d32f2f] transition-all" href="https://facebook.com" target="_blank">
                         <span class="material-symbols-outlined text-lg">share</span>
                     </a>
-                    <a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-[#e5e2e1] hover:text-[#d32f2f] transition-all" href="#">
+                    <a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-[#e5e2e1] hover:text-[#d32f2f] transition-all" href="https://instagram.com" target="_blank">
                         <span class="material-symbols-outlined text-lg">public</span>
                     </a>
                 </div>
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="space-y-4">
                     <h5 class="font-headline font-bold uppercase text-[#d32f2f] text-xs tracking-widest">Navegación</h5>
                     <ul class="space-y-2">
-                        <li><a class="text-[#e5e2e1]/60 hover:text-[#d32f2f] font-manrope text-sm transition-colors" href="index.html">Home</a></li>
+                        <li><a class="text-[#e5e2e1]/60 hover:text-[#d32f2f] font-manrope text-sm transition-colors" href="index.html">Inicio</a></li>
                         <li><a class="text-[#e5e2e1]/60 hover:text-[#d32f2f] font-manrope text-sm transition-colors" href="servicios.html">Servicios</a></li>
                         <li><a class="text-[#e5e2e1]/60 hover:text-[#d32f2f] font-manrope text-sm transition-colors" href="escuderia.html">La Escudería</a></li>
                         <li><a class="text-[#e5e2e1]/60 hover:text-[#d32f2f] font-manrope text-sm transition-colors" href="ubicacion.html">Ubicación</a></li>
@@ -29,8 +29,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="space-y-4">
                     <h5 class="font-headline font-bold uppercase text-[#d32f2f] text-xs tracking-widest">Legal</h5>
                     <ul class="space-y-2">
-                        <li><a class="text-[#e5e2e1]/60 hover:text-[#d32f2f] font-manrope text-sm transition-colors" href="#">Privacidad</a></li>
-                        <li><a class="text-[#e5e2e1]/60 hover:text-[#d32f2f] font-manrope text-sm transition-colors" href="#">Términos</a></li>
+                        <li><a class="text-[#e5e2e1]/60 hover:text-[#d32f2f] font-manrope text-sm transition-colors" href="javascript:alert('Política de privacidad en desarrollo.')">Privacidad</a></li>
+                        <li><a class="text-[#e5e2e1]/60 hover:text-[#d32f2f] font-manrope text-sm transition-colors" href="javascript:alert('Términos en desarrollo.')">Términos</a></li>
                     </ul>
                 </div>
             </div>
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         </div>
         <div class="px-12 py-8 border-t border-outline-variant/10 text-center">
-            <p class="text-[#e5e2e1]/40 font-manrope text-xs uppercase tracking-widest">© 2024 MEGA Taller. Precision Engineering.</p>
+            <p class="text-[#e5e2e1]/40 font-manrope text-xs uppercase tracking-widest">© 2024 MEGA Taller. Ingeniería de Precisión.</p>
         </div>
     </footer>
     `;

@@ -1,317 +1,396 @@
 <!DOCTYPE html>
 
-<html class="dark" lang="es"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>MEGA Taller | Ingeniería de Precisión</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              "surface": "#131313",
-              "on-primary-fixed": "#410003",
-              "error": "#ffb4ab",
-              "secondary-fixed": "#e4e2e1",
-              "on-tertiary-fixed-variant": "#454747",
-              "on-background": "#e5e2e1",
-              "tertiary-fixed-dim": "#c6c6c7",
-              "surface-container-highest": "#353534",
-              "inverse-surface": "#e5e2e1",
-              "on-secondary-fixed": "#1b1c1c",
-              "on-tertiary-fixed": "#1a1c1c",
-              "tertiary-container": "#6e7070",
-              "on-tertiary-container": "#f4f4f4",
-              "on-surface": "#e5e2e1",
-              "outline": "#ab8985",
-              "inverse-on-surface": "#313030",
-              "primary-fixed-dim": "#ffb3ac",
-              "surface-dim": "#131313",
-              "on-error-container": "#ffdad6",
-              "secondary": "#c8c6c6",
-              "primary-fixed": "#ffdad6",
-              "primary-container": "#d32f2f",
-              "surface-tint": "#ffb3ac",
-              "outline-variant": "#5b403d",
-              "error-container": "#93000a",
-              "on-secondary-fixed-variant": "#474747",
-              "on-primary-fixed-variant": "#930010",
-              "surface-variant": "#353534",
-              "on-surface-variant": "#e4beba",
-              "surface-container-high": "#2a2a2a",
-              "secondary-fixed-dim": "#c8c6c6",
-              "surface-container-lowest": "#0e0e0e",
-              "tertiary-fixed": "#e2e2e2",
-              "surface-bright": "#393939",
-              "secondary-container": "#474747",
-              "on-tertiary": "#2f3131",
-              "surface-container-low": "#1c1b1b",
-              "on-primary-container": "#fff2f0",
-              "on-secondary": "#303030",
-              "background": "#131313",
-              "on-secondary-container": "#b6b5b4",
-              "on-error": "#690005",
-              "tertiary": "#c6c6c7",
-              "on-primary": "#680008",
-              "primary": "#ffb3ac",
-              "surface-container": "#201f1f",
-              "inverse-primary": "#ba1a20"
-            },
-            fontFamily: {
-              "headline": ["Space Grotesk"],
-              "body": ["Manrope"],
-              "label": ["Inter"]
-            },
-            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+<html class="dark" lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>MEGA Taller | Ingeniería de Precisión</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface": "#131313",
+            "on-primary-fixed": "#410003",
+            "error": "#ffb4ab",
+            "secondary-fixed": "#e4e2e1",
+            "on-tertiary-fixed-variant": "#454747",
+            "on-background": "#e5e2e1",
+            "tertiary-fixed-dim": "#c6c6c7",
+            "surface-container-highest": "#353534",
+            "inverse-surface": "#e5e2e1",
+            "on-secondary-fixed": "#1b1c1c",
+            "on-tertiary-fixed": "#1a1c1c",
+            "tertiary-container": "#6e7070",
+            "on-tertiary-container": "#f4f4f4",
+            "on-surface": "#e5e2e1",
+            "outline": "#ab8985",
+            "inverse-on-surface": "#313030",
+            "primary-fixed-dim": "#ffb3ac",
+            "surface-dim": "#131313",
+            "on-error-container": "#ffdad6",
+            "secondary": "#c8c6c6",
+            "primary-fixed": "#ffdad6",
+            "primary-container": "#d32f2f",
+            "surface-tint": "#ffb3ac",
+            "outline-variant": "#5b403d",
+            "error-container": "#93000a",
+            "on-secondary-fixed-variant": "#474747",
+            "on-primary-fixed-variant": "#930010",
+            "surface-variant": "#353534",
+            "on-surface-variant": "#e4beba",
+            "surface-container-high": "#2a2a2a",
+            "secondary-fixed-dim": "#c8c6c6",
+            "surface-container-lowest": "#0e0e0e",
+            "tertiary-fixed": "#e2e2e2",
+            "surface-bright": "#393939",
+            "secondary-container": "#474747",
+            "on-tertiary": "#2f3131",
+            "surface-container-low": "#1c1b1b",
+            "on-primary-container": "#fff2f0",
+            "on-secondary": "#303030",
+            "background": "#131313",
+            "on-secondary-container": "#b6b5b4",
+            "on-error": "#690005",
+            "tertiary": "#c6c6c7",
+            "on-primary": "#680008",
+            "primary": "#ffb3ac",
+            "surface-container": "#201f1f",
+            "inverse-primary": "#ba1a20"
           },
+          fontFamily: {
+            "headline": ["Space Grotesk"],
+            "body": ["Manrope"],
+            "label": ["Inter"]
+          },
+          borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
         },
-      }
-    </script>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        .grainy-overlay {
-            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-            opacity: 0.03;
-            pointer-events: none;
-        }
-    </style>
-    <link rel="stylesheet" href="css/animations.css">
-    <script src="js/nav.js"></script>
-    <script src="js/footer.js"></script>
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    .grainy-overlay {
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+      opacity: 0.03;
+      pointer-events: none;
+    }
+  </style>
+  <link rel="stylesheet" href="css/animations.css">
+  <script src="js/nav.js"></script>
+  <script src="js/footer.js"></script>
 </head>
+
 <body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
-<div class="grainy-overlay fixed inset-0 z-[100]"></div>
-<!-- Navigation Placeholder -->
-<div id="nav-placeholder"></div>
-<main>
-<!-- Hero Section -->
-<section class="relative min-h-screen flex items-center justify-center overflow-hidden">
-<div class="absolute inset-0 z-0">
-<img class="w-full h-full object-cover opacity-40 grayscale-[0.5] contrast-125" data-alt="close-up of a high-end luxury sports car engine bay with red carbon fiber details in a dimly lit modern workshop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBHRdmF9dX8fH85YT3kiKfw--sA4kGQaSvYcCkEvIZua2sIo9un5YSM6nYuFht-o_fvrjrh8PVaMqZeelJZ61-bhlUwtubPFUjB2b3M8vOXFYZKotaj91_p4BPRY5CzQnCUEJK6fJsTOJTsm2RaIyFlMJT8L2OKGrCJSkUR-vbg4MeIJ2BH89b2A2uIoURc_isUA4G8SzGiJxgmZRobAiti4iDHSYmsN39H_pObNEbwFW-kU32bpgIdOg1HIaXyESN9nIXkki2tCo"/>
-<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-surface/80"></div>
-<div class="absolute inset-0 bg-gradient-to-r from-surface via-transparent to-surface/40"></div>
-</div>
-<div class="relative z-10 max-w-7xl mx-auto px-8 w-full text-center md:text-left">
-<div class="mb-6 inline-block">
-<img alt="MEGA Taller Logo" class="h-16 md:h-24 filter brightness-110 drop-shadow-2xl" data-alt="High-performance automotive brand logo featuring bold sans-serif typography with a red and black industrial aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBocmDP6jNcM4oP-x2cD81wRSCZsYT0dyuKpZ6ml--VtXj-VOKFtfsDlijB9AO-Vz3agM3ngp_wWQ0biAhdGkGVC7Fx9tgaETV_BFtXmZI1lFKkBw-s4j6ZZgN8QhDBgPHNPyiXIwWeakO7cWWcgsAJ0qIrBYQYRIBZU5u-MqyWB0txlvonRV_XfL5lYEbgSCWI0zp6nzZgvzxYdB7JPGveWvOQf8_vRyUNs3mzyxHOYvVbYBpgOnXB7VWDvuMLsQ-Gx85fvZ7EuS4"/>
-</div>
-<h1 class="font-headline font-black text-5xl md:text-8xl text-on-surface leading-[0.9] tracking-tighter mb-8 uppercase italic">
-                    Ingeniería de <br/>
-<span class="text-primary-container">Precisión</span> en <br/>
-                    Cada Reparación
-                </h1>
-<p class="max-w-2xl text-on-surface-variant text-lg md:text-xl font-body mb-10 leading-relaxed border-l-4 border-primary-container pl-6">
-                    Elevamos el estándar del cuidado automotriz. Un atelier de alto rendimiento donde la tecnología de vanguardia se encuentra con la maestría artesanal.
-                </p>
-<div class="flex flex-col md:flex-row gap-4">
-<button class="bg-primary-container text-on-primary-container px-10 py-5 rounded-md font-headline font-black uppercase tracking-widest text-lg shadow-[0px_8px_24px_rgba(211,47,47,0.3)] hover:scale-105 active:scale-95 transition-all">
-                        Reservar Turno
-                    </button>
-<button class="border border-outline-variant/30 backdrop-blur-sm bg-surface-container-high/40 text-on-surface px-10 py-5 rounded-md font-headline font-bold uppercase tracking-widest text-lg hover:bg-surface-container-highest transition-all">
-                        Nuestra Galería
-                    </button>
-</div>
-</div>
-<!-- Scroll Indicator -->
-<div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50">
-<span class="text-xs uppercase font-label tracking-[0.3em]">Scroll</span>
-<div class="w-px h-12 bg-gradient-to-b from-primary-container to-transparent"></div>
-</div>
-</section>
-<!-- Value Propositions (Performance Metrics) -->
-<section class="bg-surface-container-low py-16">
-<div class="max-w-7xl mx-auto px-8">
-<div class="grid grid-cols-1 md:grid-cols-3 gap-12 border-y border-outline-variant/10 py-12">
-<div class="flex flex-col items-center text-center">
-<span class="font-headline text-6xl font-black text-primary-container mb-2">14+</span>
-<span class="font-label uppercase tracking-widest text-on-surface-variant font-semibold">Años de Experiencia</span>
-</div>
-<div class="flex flex-col items-center text-center">
-<span class="font-headline text-6xl font-black text-on-surface mb-2 tracking-tighter">ELITE</span>
-<span class="font-label uppercase tracking-widest text-on-surface-variant font-semibold">Equipamiento de Última Generación</span>
-</div>
-<div class="flex flex-col items-center text-center">
-<span class="font-headline text-6xl font-black text-primary-container mb-2">100%</span>
-<span class="font-label uppercase tracking-widest text-on-surface-variant font-semibold">Garantía Certificada</span>
-</div>
-</div>
-</div>
-</section>
-<!-- About Us Section -->
-<section class="py-24 relative overflow-hidden">
-<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-<div class="relative">
-<div class="absolute -top-10 -left-10 w-64 h-64 bg-primary-container/10 rounded-full blur-3xl"></div>
-<div class="border-l border-primary-container/30 pl-8">
-<span class="font-label text-primary-container uppercase tracking-[0.4em] text-sm mb-4 block">Sobre Nosotros</span>
-<h2 class="font-headline text-4xl md:text-6xl font-black uppercase italic mb-8 tracking-tighter text-on-surface">Turbo Precision: <br/><span class="text-on-surface-variant/50">El Corazón de Mega</span></h2>
-<div class="space-y-6 font-body text-on-surface-variant leading-loose text-lg">
-<p>En MEGA Taller, no solo reparamos vehículos; optimizamos máquinas de precisión. Nuestra historia está forjada en la búsqueda incansable de la perfección técnica y el servicio personalizado.</p>
-<p>Desde vehículos de alta gama hasta soluciones mecánicas complejas, nuestro equipo de expertos certificados aplica una metodología de diagnóstico avanzado que garantiza resultados superiores en cada intervención.</p>
-</div>
-</div>
-</div>
-<div class="grid grid-cols-2 gap-4">
-<div class="space-y-4 pt-12">
-<div class="bg-surface-container-high aspect-[3/4] rounded-lg overflow-hidden relative group">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="focused automotive technician working with digital diagnostic tools on a modern car engine dashboard" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJ2_EOR9SCiGwL7pjMH5Z7Qw5kVN9FFphLB-YRBZ2DgQjzMfBMFwN1ReO9iXsg1PuUn2S9EgudRs021yaEWpnR3B6ybfli-yBJnIumo_ivbFGjMToUE2jbi1fwvKPzoVR-5yOfVDavYyL6kJy5biQRktUSLXzHL8ixjVoIe47sQEVc6F-a5ahd9uCtzPBfiUbg37rR9n3f5t00YLljtKMmxdfEpC8mla9VtCt4kd9t79-SWxSownPlqrzaEDmJiEIt0pb4C64Lefs"/>
-</div>
-<div class="bg-surface-container-high aspect-square rounded-lg overflow-hidden relative group">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="rear view of a silver Porsche 911 being detailed in a clean, minimalist garage with bright LED lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBw5s0_qyCmqg49kdMKbk3cOFkGDm7HYoAtrXSNrPXr2GP59vbH4HPQtC01TU6op4EY6LdPhu1n5bh81Rwq4X8KvXhDtXCxRjCZ622_Nb-TgoLSUFYufnNNIcKcJeuEv4vpN0An876lHGkjD-QVaXbbj4Ma5sG7yUDUdNPd27c1JLjMrNoA_FD-39kCz2c7I2GtvAe7E72lx3HCd_62ozV1vtySElgjDa37gPB9WXT42wbC3Pdijg0c97B58vEgUrCJmpn4s8LTIqU"/>
-</div>
-</div>
-<div class="space-y-4">
-<div class="bg-surface-container-high aspect-square rounded-lg overflow-hidden relative group">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="close-up of industrial automotive tools, wrenches, and gear organized on a dark magnetic tool wall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHdKRSDRX2UxO2GzrOQ9BGK66ZfOlGG5utJ13iw6DAFnFoq4tFtUgciTv9euVCCH6fYyJYOpJzzwsTURn1kFZjzVAQPYrruBfY_7JLM8eXT91w-5UG-Mp58vcKuQtXBOi0n9f5Yjp8larfduGxqSQOsD9UE_fG5F2Ax0oOFrsat5BxenVGRhZDI08anfYjCQHdOFrygsFFmIz9qtMH_Ix8HsJ6XzPTAZe-m6v79qEdjiN0K-g2ZXMn3229E-IY4T36lJT8na1KLLw"/>
-</div>
-<div class="bg-surface-container-high aspect-[3/4] rounded-lg overflow-hidden relative group border-2 border-primary-container/20">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="interior of a high-end car painting booth with a car body receiving a deep red coat of paint" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbpsp2vCKKas8i2HoftbWPfFkFgCLujUPHTdQg4w6VyELOrVd4rB4dUH3jcuwybSHo0AF2FdZOAiKpM5H3b6RoJ8ZJsfKxGixieyUXjBOGzNCOFbsEGhJmXrrT11WUHpmaosQsZ70PKsFNuTZONh-4vxndX6TSeJYD77-B-x8vATqM4-G5iHSfHqcEkzDIY1eQjyRjDRJTN_K2WlzkQVhhhtQK5CKbqt3SzZ7oyBc7_rz74qgq1FV7ie0x6MJjDZXQLYbI8TNDvhU"/>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Services Section (Asymmetric Grid) -->
-<section class="bg-surface-container-lowest py-24">
-<div class="max-w-7xl mx-auto px-8">
-<div class="flex justify-between items-end mb-16">
-<div>
-<span class="font-label text-primary-container uppercase tracking-[0.4em] text-sm mb-4 block">Expertise Técnico</span>
-<h2 class="font-headline text-5xl md:text-7xl font-black uppercase italic tracking-tighter">Nuestros Servicios</h2>
-</div>
-<div class="hidden md:block pb-2">
-<div class="w-32 h-1 bg-primary-container"></div>
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
-<!-- Service 1: Mecánica -->
-<div class="md:col-span-8 group cursor-pointer">
-<div class="relative overflow-hidden rounded-lg aspect-[16/7]">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="macro shot of a professional mechanic's grease-stained hands working on a complex engine part with precision tools" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzLL9iaIztpcpaZF7OR1qnaZQa8zZJTkpN9DdpOyTd8pQQZq84E1drhuuSBYmW8X21vgCET-1lk_FLh6xC8h5keauWwrumgsF86XBANpwIasXQ9gnX-GY-gjyd2TLtNyP16htb7fFrPMd4BKc3sik7UpeeV3PRODAoPBau9dCXna_s4hACmvBcRdZV1zavv3Txg3YB1cSWEM61dGugTjiA_N8sUwgDqeDQwM-papRAfLhSXp5yK5-TIJrNuqcLwpBn9PvaCm7kZ_o"/>
-<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent opacity-80"></div>
-<div class="absolute bottom-0 left-0 p-10">
-<span class="material-symbols-outlined text-primary-container text-4xl mb-4" style="font-variation-settings: 'FILL' 1;">precision_manufacturing</span>
-<h3 class="font-headline text-4xl font-black uppercase italic mb-2">Mecánica General</h3>
-<p class="text-on-surface-variant max-w-md font-body">Mantenimiento preventivo y correctivo con estándares de fábrica para motores de alta performance.</p>
-</div>
-</div>
-</div>
-<!-- Service 2: Electricidad -->
-<div class="md:col-span-4 group cursor-pointer">
-<div class="relative overflow-hidden rounded-lg h-full bg-surface-container-high flex flex-col">
-<div class="p-10 flex-grow">
-<span class="material-symbols-outlined text-primary-container text-4xl mb-4" style="font-variation-settings: 'FILL' 1;">bolt</span>
-<h3 class="font-headline text-3xl font-black uppercase italic mb-4">Electricidad del Automotor</h3>
-<ul class="space-y-3 text-on-surface-variant font-label text-sm uppercase tracking-wider">
-<li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-primary-container rounded-full"></div> Diagnóstico Computarizado</li>
-<li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-primary-container rounded-full"></div> Inyección Electrónica</li>
-<li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-primary-container rounded-full"></div> Sistemas de Confort</li>
-</ul>
-</div>
-<div class="h-48 overflow-hidden">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="close up of a modern car's circuit board and wiring harness being tested with an oscilloscope" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_fTLSCQQ0xg31Pko1cb120BTq0lEKzPrjzYKMOeABWSR0GEg3xO6EMEUj9gvbmbPFljxh8vijd3T4socd1lEemIPEpivw8MGZ0wtwt9NrhIZOvLSyy21aQBh3ulvfAmj3eos4VXTVHWZygL-WIXw7FlFMvzqFgihyXAMwKzKwhvTecmD5gXjrjzsMtwHA-BYd-Yq7-8ny3Ka1JL1K89RgFUDjf8UwsBRkT5sX90SuFxG0zbv-HFsLhYRqVacz4Nm3e_4k68iOcpw"/>
-</div>
-</div>
-</div>
-<!-- Service 3: Chapería -->
-<div class="md:col-span-5 group cursor-pointer">
-<div class="relative overflow-hidden rounded-lg aspect-[4/5]">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="shiny black sports car body being hand-polished by a professional detailer in a dark studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVu39ZrpEdpBMUNjP7XPBqEQAk_uTuY9iPSFIUIFWo3vQ1N-Ga-ZDX99mvZLMNxCH6H6uwd7uhwCo1hGkl9pKZucf7wCOLnRNEKVjlmMICPF_jw3oNMm4bV-Qg6eXoQl5ppxasPy8--JjDUOsEQyW2KMdqJ-PLJ3LvA8jnZJ2_NrVEBi3GG5XGu70lAUZG_8Jbniun2cO4rSAU4jbyKNtCY-bsvelm7lMZCToW94pO0w5ztvgkG_ys00nF8q8x0dQpMtHgkJqKxNY"/>
-<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent opacity-90"></div>
-<div class="absolute bottom-0 left-0 p-10">
-<span class="material-symbols-outlined text-primary-container text-4xl mb-4" style="font-variation-settings: 'FILL' 1;">format_paint</span>
-<h3 class="font-headline text-4xl font-black uppercase italic mb-2">Chapería y Pintura</h3>
-<p class="text-on-surface-variant font-body">Restauración estética con cabina de pintura presurizada y acabados de espejo.</p>
-</div>
-</div>
-</div>
-<!-- CTA Service -->
-<div class="md:col-span-7 bg-primary-container rounded-lg p-12 flex flex-col justify-center relative overflow-hidden group cursor-pointer">
-<div class="absolute top-0 right-0 p-4 opacity-10">
-<span class="material-symbols-outlined text-[15rem] leading-none" style="font-variation-settings: 'FILL' 1;">engineering</span>
-</div>
-<h3 class="font-headline text-5xl font-black uppercase italic text-on-primary-container mb-6 leading-tight">¿Necesitas un diagnóstico especializado?</h3>
-<p class="text-on-primary-container/80 text-xl font-body mb-8 max-w-lg">Agenda hoy mismo una revisión detallada de tu vehículo con nuestros maestros mecánicos.</p>
-<div>
-<button class="bg-surface text-on-surface px-8 py-4 rounded-md font-headline font-black uppercase tracking-widest text-lg group-hover:bg-on-surface group-hover:text-surface transition-all">
-                                Solicitar Presupuesto
-                            </button>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Location & Contact -->
-<section class="py-24 bg-surface">
-<div class="max-w-7xl mx-auto px-8">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
-<div class="space-y-12">
-<div>
-<span class="font-label text-primary-container uppercase tracking-[0.4em] text-sm mb-4 block">Estamos Aquí</span>
-<h2 class="font-headline text-5xl font-black uppercase italic tracking-tighter mb-8 text-on-surface">Ubicación Estratégica</h2>
-</div>
-<div class="space-y-8">
-<div class="flex gap-6 items-start">
-<div class="bg-surface-container-high p-4 rounded-lg text-primary-container">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">location_on</span>
-</div>
-<div>
-<h4 class="font-headline font-bold uppercase tracking-widest text-on-surface mb-2">Dirección</h4>
-<p class="font-body text-on-surface-variant text-lg">Av. Mcal. López, Asunción, Paraguay</p>
-</div>
-</div>
-<div class="flex gap-6 items-start">
-<div class="bg-surface-container-high p-4 rounded-lg text-primary-container">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">schedule</span>
-</div>
-<div>
-<h4 class="font-headline font-bold uppercase tracking-widest text-on-surface mb-2">Horarios de Atención</h4>
-<p class="font-body text-on-surface-variant text-lg">Lunes a Viernes: 08:00 - 18:00<br/>Sábados: 08:00 - 12:00</p>
-</div>
-</div>
-<div class="flex gap-6 items-start">
-<div class="bg-surface-container-high p-4 rounded-lg text-primary-container">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
-</div>
-<div>
-<h4 class="font-headline font-bold uppercase tracking-widest text-on-surface mb-2">Contacto Directo</h4>
-<a class="font-headline font-black text-2xl text-on-surface hover:text-primary-container transition-colors" href="#">+595 9XX XXX XXX</a>
-<p class="font-body text-on-surface-variant mt-1">Soporte vía WhatsApp disponible</p>
-</div>
-</div>
-</div>
-</div>
-<div class="h-[500px] bg-surface-container-highest rounded-lg overflow-hidden relative shadow-2xl border border-outline-variant/20">
-<!-- Stylized Map Placeholder -->
-<div class="absolute inset-0 bg-[#1c1b1b] grayscale contrast-125 opacity-40">
-<img class="w-full h-full object-cover" data-alt="stylized dark mode map of an urban area with clean typography and minimalist street lines" data-location="Asunción, Paraguay" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-1Q4DwcP-HnKqJDrNcTO_ACAR40KNVEY3SMydzFums85dWDWfDehp0MzfAENstaaYHxohnRB10xmTcC4YavMNhvhy54bf60DDMWqKqL2ZTiyUB7uAEVsYcHwasP5sTC12H-GdNIZNK3-gA_J5ZEduW-lvndNBYNMuLoaiezJ58tbadpn84UICniF7LYMo3O5ouoj14OXvWtknJjNtk7_Dx_m6sj1alQb837eyXJ437FxfVq8FweiAXgxEFwMgBhbHpoyTquYt-Mk"/>
-</div>
-<div class="absolute inset-0 flex items-center justify-center">
-<div class="relative">
-<div class="absolute -inset-4 bg-primary-container/20 rounded-full animate-ping"></div>
-<div class="relative bg-primary-container p-4 rounded-full text-on-primary-container shadow-xl">
-<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">home_repair_service</span>
-</div>
-</div>
-</div>
-<div class="absolute bottom-6 left-6 right-6 bg-surface/90 backdrop-blur-md p-6 rounded-lg border border-outline-variant/10">
-<p class="font-headline font-bold uppercase italic text-on-surface">MEGA Taller Central</p>
-<p class="text-sm text-on-surface-variant font-label">Av. Mariscal López c/ Kubitschek</p>
-<button class="mt-4 w-full bg-primary-container py-3 font-headline font-black uppercase text-xs tracking-[0.2em] text-on-primary-container">Cómo Llegar</button>
-</div>
-</div>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer Placeholder -->
-<div id="footer-placeholder"></div>
-<script src="js/main.js"></script>
-</body></html>
+  <div class="grainy-overlay fixed inset-0 z-[100]"></div>
+  <!-- Navigation Placeholder -->
+  <div id="nav-placeholder"></div>
+  <main>
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <img class="w-full h-full object-cover opacity-40 grayscale-[0.5] contrast-125"
+          data-alt="close-up of a high-end luxury sports car engine bay with red carbon fiber details in a dimly lit modern workshop"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBHRdmF9dX8fH85YT3kiKfw--sA4kGQaSvYcCkEvIZua2sIo9un5YSM6nYuFht-o_fvrjrh8PVaMqZeelJZ61-bhlUwtubPFUjB2b3M8vOXFYZKotaj91_p4BPRY5CzQnCUEJK6fJsTOJTsm2RaIyFlMJT8L2OKGrCJSkUR-vbg4MeIJ2BH89b2A2uIoURc_isUA4G8SzGiJxgmZRobAiti4iDHSYmsN39H_pObNEbwFW-kU32bpgIdOg1HIaXyESN9nIXkki2tCo" />
+        <div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-surface/80"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-surface via-transparent to-surface/40"></div>
+      </div>
+      <div class="relative z-10 max-w-7xl mx-auto px-8 w-full text-center md:text-left">
+        <div class="mb-6 inline-block">
+          <img alt="MEGA Taller Logo" class="h-16 md:h-24 filter brightness-110 drop-shadow-2xl"
+            data-alt="High-performance automotive brand logo featuring bold sans-serif typography with a red and black industrial aesthetic"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBocmDP6jNcM4oP-x2cD81wRSCZsYT0dyuKpZ6ml--VtXj-VOKFtfsDlijB9AO-Vz3agM3ngp_wWQ0biAhdGkGVC7Fx9tgaETV_BFtXmZI1lFKkBw-s4j6ZZgN8QhDBgPHNPyiXIwWeakO7cWWcgsAJ0qIrBYQYRIBZU5u-MqyWB0txlvonRV_XfL5lYEbgSCWI0zp6nzZgvzxYdB7JPGveWvOQf8_vRyUNs3mzyxHOYvVbYBpgOnXB7VWDvuMLsQ-Gx85fvZ7EuS4" />
+        </div>
+        <h1
+          class="font-headline font-black text-5xl md:text-8xl text-on-surface leading-[0.9] tracking-tighter mb-8 uppercase italic">
+          Ingeniería de <br />
+          <span class="text-primary-container">Precisión</span> en <br />
+          Cada Reparación
+        </h1>
+        <p
+          class="max-w-2xl text-on-surface-variant text-lg md:text-xl font-body mb-10 leading-relaxed border-l-4 border-primary-container pl-6">
+          Elevamos el estándar del cuidado automotriz. Un atelier de alto rendimiento donde la tecnología de vanguardia
+          se encuentra con la maestría artesanal.
+        </p>
+        <div class="flex flex-col md:flex-row gap-4">
+          <button onclick="window.location.href='ubicacion.html'"
+            class="bg-primary-container text-on-primary-container px-10 py-5 rounded-md font-headline font-black uppercase tracking-widest text-lg shadow-[0px_8px_24px_rgba(211,47,47,0.3)] hover:scale-105 active:scale-95 transition-all">
+            Reservar Turno
+          </button>
+          <button onclick="window.location.href='escuderia.html'"
+            class="border border-outline-variant/30 backdrop-blur-sm bg-surface-container-high/40 text-on-surface px-10 py-5 rounded-md font-headline font-bold uppercase tracking-widest text-lg hover:bg-surface-container-highest transition-all">
+            Sobre Nosotros
+          </button>
+        </div>
+      </div>
+      <!-- Scroll Indicator -->
+      <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50">
+        <span class="text-xs uppercase font-label tracking-[0.3em]">Explorar</span>
+        <div class="w-px h-12 bg-gradient-to-b from-primary-container to-transparent"></div>
+      </div>
+    </section>
+    <!-- Value Propositions (Performance Metrics) -->
+    <section class="bg-surface-container-low py-16">
+      <div class="max-w-7xl mx-auto px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 border-y border-outline-variant/10 py-12">
+          <div class="flex flex-col items-center text-center">
+            <span class="font-headline text-6xl font-black text-primary-container mb-2">14+</span>
+            <span class="font-label uppercase tracking-widest text-on-surface-variant font-semibold">Años de
+              Experiencia</span>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <span class="font-headline text-6xl font-black text-on-surface mb-2 tracking-tighter">ELITE</span>
+            <span class="font-label uppercase tracking-widest text-on-surface-variant font-semibold">Equipamiento de
+              Última Generación</span>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <span class="font-headline text-6xl font-black text-primary-container mb-2">100%</span>
+            <span class="font-label uppercase tracking-widest text-on-surface-variant font-semibold">Garantía
+              Certificada</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Us Section -->
+    <section class="py-24 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+        <div class="relative">
+          <div class="absolute -top-10 -left-10 w-64 h-64 bg-primary-container/10 rounded-full blur-3xl"></div>
+          <div class="border-l border-primary-container/30 pl-8">
+            <span class="font-label text-primary-container uppercase tracking-[0.4em] text-sm mb-4 block">Sobre
+              Nosotros</span>
+            <h2
+              class="font-headline text-4xl md:text-6xl font-black uppercase italic mb-8 tracking-tighter text-on-surface">
+              Turbo Precision: <br /><span class="text-on-surface-variant/50">El Corazón de Mega</span></h2>
+            <div class="space-y-6 font-body text-on-surface-variant leading-loose text-lg">
+              <p>En MEGA Taller, no solo reparamos vehículos; optimizamos máquinas de precisión. Nuestra historia está
+                forjada en la búsqueda incansable de la perfección técnica y el servicio personalizado.</p>
+              <p>Desde vehículos de alta gama hasta soluciones mecánicas complejas, nuestro equipo de expertos
+                certificados aplica una metodología de diagnóstico avanzado que garantiza resultados superiores en cada
+                intervención.</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="space-y-4 pt-12">
+            <div class="bg-surface-container-high aspect-[3/4] rounded-lg overflow-hidden relative group">
+              <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                data-alt="focused automotive technician working with digital diagnostic tools on a modern car engine dashboard"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJ2_EOR9SCiGwL7pjMH5Z7Qw5kVN9FFphLB-YRBZ2DgQjzMfBMFwN1ReO9iXsg1PuUn2S9EgudRs021yaEWpnR3B6ybfli-yBJnIumo_ivbFGjMToUE2jbi1fwvKPzoVR-5yOfVDavYyL6kJy5biQRktUSLXzHL8ixjVoIe47sQEVc6F-a5ahd9uCtzPBfiUbg37rR9n3f5t00YLljtKMmxdfEpC8mla9VtCt4kd9t79-SWxSownPlqrzaEDmJiEIt0pb4C64Lefs" />
+            </div>
+            <div class="bg-surface-container-high aspect-square rounded-lg overflow-hidden relative group">
+              <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                data-alt="rear view of a silver Porsche 911 being detailed in a clean, minimalist garage with bright LED lighting"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBw5s0_qyCmqg49kdMKbk3cOFkGDm7HYoAtrXSNrPXr2GP59vbH4HPQtC01TU6op4EY6LdPhu1n5bh81Rwq4X8KvXhDtXCxRjCZ622_Nb-TgoLSUFYufnNNIcKcJeuEv4vpN0An876lHGkjD-QVaXbbj4Ma5sG7yUDUdNPd27c1JLjMrNoA_FD-39kCz2c7I2GtvAe7E72lx3HCd_62ozV1vtySElgjDa37gPB9WXT42wbC3Pdijg0c97B58vEgUrCJmpn4s8LTIqU" />
+            </div>
+          </div>
+          <div class="space-y-4">
+            <div class="bg-surface-container-high aspect-square rounded-lg overflow-hidden relative group">
+              <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                data-alt="close-up of industrial automotive tools, wrenches, and gear organized on a dark magnetic tool wall"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHdKRSDRX2UxO2GzrOQ9BGK66ZfOlGG5utJ13iw6DAFnFoq4tFtUgciTv9euVCCH6fYyJYOpJzzwsTURn1kFZjzVAQPYrruBfY_7JLM8eXT91w-5UG-Mp58vcKuQtXBOi0n9f5Yjp8larfduGxqSQOsD9UE_fG5F2Ax0oOFrsat5BxenVGRhZDI08anfYjCQHdOFrygsFFmIz9qtMH_Ix8HsJ6XzPTAZe-m6v79qEdjiN0K-g2ZXMn3229E-IY4T36lJT8na1KLLw" />
+            </div>
+            <div
+              class="bg-surface-container-high aspect-[3/4] rounded-lg overflow-hidden relative group border-2 border-primary-container/20">
+              <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                data-alt="interior of a high-end car painting booth with a car body receiving a deep red coat of paint"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbpsp2vCKKas8i2HoftbWPfFkFgCLujUPHTdQg4w6VyELOrVd4rB4dUH3jcuwybSHo0AF2FdZOAiKpM5H3b6RoJ8ZJsfKxGixieyUXjBOGzNCOFbsEGhJmXrrT11WUHpmaosQsZ70PKsFNuTZONh-4vxndX6TSeJYD77-B-x8vATqM4-G5iHSfHqcEkzDIY1eQjyRjDRJTN_K2WlzkQVhhhtQK5CKbqt3SzZ7oyBc7_rz74qgq1FV7ie0x6MJjDZXQLYbI8TNDvhU" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services Section (Asymmetric Grid) -->
+    <section class="bg-surface-container-lowest py-24">
+      <div class="max-w-7xl mx-auto px-8">
+        <div class="flex justify-between items-end mb-16">
+          <div>
+            <span class="font-label text-primary-container uppercase tracking-[0.4em] text-sm mb-4 block">Expertise
+              Técnico</span>
+            <h2 class="font-headline text-5xl md:text-7xl font-black uppercase italic tracking-tighter">Nuestros
+              Servicios</h2>
+          </div>
+          <div class="hidden md:block pb-2">
+            <div class="w-32 h-1 bg-primary-container"></div>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+          <!-- Service 1: Mecánica -->
+          <div class="md:col-span-8 group cursor-pointer">
+            <div class="relative overflow-hidden rounded-lg aspect-[16/7]">
+              <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                data-alt="macro shot of a professional mechanic's grease-stained hands working on a complex engine part with precision tools"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzLL9iaIztpcpaZF7OR1qnaZQa8zZJTkpN9DdpOyTd8pQQZq84E1drhuuSBYmW8X21vgCET-1lk_FLh6xC8h5keauWwrumgsF86XBANpwIasXQ9gnX-GY-gjyd2TLtNyP16htb7fFrPMd4BKc3sik7UpeeV3PRODAoPBau9dCXna_s4hACmvBcRdZV1zavv3Txg3YB1cSWEM61dGugTjiA_N8sUwgDqeDQwM-papRAfLhSXp5yK5-TIJrNuqcLwpBn9PvaCm7kZ_o" />
+              <div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent opacity-80">
+              </div>
+              <div class="absolute bottom-0 left-0 p-10">
+                <span class="material-symbols-outlined text-primary-container text-4xl mb-4"
+                  style="font-variation-settings: 'FILL' 1;">precision_manufacturing</span>
+                <h3 class="font-headline text-4xl font-black uppercase italic mb-2">Mecánica General</h3>
+                <p class="text-on-surface-variant max-w-md font-body">Mantenimiento preventivo y correctivo con
+                  estándares de fábrica para motores de alta performance.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Service 2: Electricidad -->
+          <div class="md:col-span-4 group cursor-pointer">
+            <div class="relative overflow-hidden rounded-lg h-full bg-surface-container-high flex flex-col">
+              <div class="p-10 flex-grow">
+                <span class="material-symbols-outlined text-primary-container text-4xl mb-4"
+                  style="font-variation-settings: 'FILL' 1;">bolt</span>
+                <h3 class="font-headline text-3xl font-black uppercase italic mb-4">Electricidad del Automotor</h3>
+                <ul class="space-y-3 text-on-surface-variant font-label text-sm uppercase tracking-wider">
+                  <li class="flex items-center gap-2">
+                    <div class="w-1.5 h-1.5 bg-primary-container rounded-full"></div> Diagnóstico Computarizado
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <div class="w-1.5 h-1.5 bg-primary-container rounded-full"></div> Inyección Electrónica
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <div class="w-1.5 h-1.5 bg-primary-container rounded-full"></div> Sistemas de Confort
+                  </li>
+                </ul>
+              </div>
+              <div class="h-48 overflow-hidden">
+                <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  data-alt="close up of a modern car's circuit board and wiring harness being tested with an oscilloscope"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_fTLSCQQ0xg31Pko1cb120BTq0lEKzPrjzYKMOeABWSR0GEg3xO6EMEUj9gvbmbPFljxh8vijd3T4socd1lEemIPEpivw8MGZ0wtwt9NrhIZOvLSyy21aQBh3ulvfAmj3eos4VXTVHWZygL-WIXw7FlFMvzqFgihyXAMwKzKwhvTecmD5gXjrjzsMtwHA-BYd-Yq7-8ny3Ka1JL1K89RgFUDjf8UwsBRkT5sX90SuFxG0zbv-HFsLhYRqVacz4Nm3e_4k68iOcpw" />
+              </div>
+            </div>
+          </div>
+          <!-- Service 3: Chapería -->
+          <div class="md:col-span-5 group cursor-pointer">
+            <div class="relative overflow-hidden rounded-lg aspect-[4/5]">
+              <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                data-alt="shiny black sports car body being hand-polished by a professional detailer in a dark studio"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVu39ZrpEdpBMUNjP7XPBqEQAk_uTuY9iPSFIUIFWo3vQ1N-Ga-ZDX99mvZLMNxCH6H6uwd7uhwCo1hGkl9pKZucf7wCOLnRNEKVjlmMICPF_jw3oNMm4bV-Qg6eXoQl5ppxasPy8--JjDUOsEQyW2KMdqJ-PLJ3LvA8jnZJ2_NrVEBi3GG5XGu70lAUZG_8Jbniun2cO4rSAU4jbyKNtCY-bsvelm7lMZCToW94pO0w5ztvgkG_ys00nF8q8x0dQpMtHgkJqKxNY" />
+              <div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent opacity-90">
+              </div>
+              <div class="absolute bottom-0 left-0 p-10">
+                <span class="material-symbols-outlined text-primary-container text-4xl mb-4"
+                  style="font-variation-settings: 'FILL' 1;">format_paint</span>
+                <h3 class="font-headline text-4xl font-black uppercase italic mb-2">Chapería y Pintura</h3>
+                <p class="text-on-surface-variant font-body">Restauración estética con cabina de pintura presurizada y
+                  acabados de espejo.</p>
+              </div>
+            </div>
+          </div>
+          <!-- CTA Service -->
+          <div
+            class="md:col-span-7 bg-primary-container rounded-lg p-12 flex flex-col justify-center relative overflow-hidden group cursor-pointer">
+            <div class="absolute top-0 right-0 p-4 opacity-10">
+              <span class="material-symbols-outlined text-[15rem] leading-none"
+                style="font-variation-settings: 'FILL' 1;">engineering</span>
+            </div>
+            <h3 class="font-headline text-5xl font-black uppercase italic text-on-primary-container mb-6 leading-tight">
+              ¿Necesitas un diagnóstico especializado?</h3>
+            <p class="text-on-primary-container/80 text-xl font-body mb-8 max-w-lg">Agenda hoy mismo una revisión
+              detallada de tu vehículo con nuestros maestros mecánicos.</p>
+            <div>
+              <button onclick="window.open('https://wa.me/59177958263', '_blank')"
+                class="bg-surface text-on-surface px-8 py-4 rounded-md font-headline font-black uppercase tracking-widest text-lg group-hover:bg-on-surface group-hover:text-surface transition-all">
+                Solicitar Presupuesto
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Location & Contact -->
+    <section class="py-24 bg-surface">
+      <div class="max-w-7xl mx-auto px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+          <div class="space-y-12">
+            <div>
+              <span class="font-label text-primary-container uppercase tracking-[0.4em] text-sm mb-4 block">Estamos
+                Aquí</span>
+              <h2 class="font-headline text-5xl font-black uppercase italic tracking-tighter mb-8 text-on-surface">
+                Ubicación Estratégica</h2>
+            </div>
+            <div class="space-y-8">
+              <div class="flex gap-6 items-start">
+                <div class="bg-surface-container-high p-4 rounded-lg text-primary-container">
+                  <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">location_on</span>
+                </div>
+                <div>
+                  <h4 class="font-headline font-bold uppercase tracking-widest text-on-surface mb-2">Dirección</h4>
+                  <p class="font-body text-on-surface-variant text-lg">Calle Tocopilla entre Luis Uria, Quillacollo</p>
+                </div>
+              </div>
+              <div class="flex gap-6 items-start">
+                <div class="bg-surface-container-high p-4 rounded-lg text-primary-container">
+                  <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">schedule</span>
+                </div>
+                <div>
+                  <h4 class="font-headline font-bold uppercase tracking-widest text-on-surface mb-2">Horarios de
+                    Atención</h4>
+                  <p class="font-body text-on-surface-variant text-lg">Lunes a Viernes: 08:00 - 18:00<br />Sábados:
+                    08:00 - 13:00</p>
+                </div>
+              </div>
+              <div class="flex gap-6 items-start">
+                <div class="bg-surface-container-high p-4 rounded-lg text-primary-container">
+                  <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+                </div>
+                <div>
+                  <h4 class="font-headline font-bold uppercase tracking-widest text-on-surface mb-2">Contacto Directo
+                  </h4>
+                  <a class="font-headline font-black text-2xl text-on-surface hover:text-primary-container transition-colors"
+                    href="https://wa.me/59177958263" target="_blank">+591 77958263</a>
+                  <p class="font-body text-on-surface-variant mt-1">Soporte vía WhatsApp disponible</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="h-[500px] bg-surface-container-highest rounded-lg overflow-hidden relative shadow-2xl border border-outline-variant/20">
+            <!-- Stylized Map Placeholder -->
+            <div class="absolute inset-0 bg-[#1c1b1b] grayscale contrast-125 opacity-40">
+              <img class="w-full h-full object-cover"
+                data-alt="stylized dark mode map of an urban area with clean typography and minimalist street lines"
+                data-location="Quillacollo, Bolivia"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-1Q4DwcP-HnKqJDrNcTO_ACAR40KNVEY3SMydzFums85dWDWfDehp0MzfAENstaaYHxohnRB10xmTcC4YavMNhvhy54bf60DDMWqKqL2ZTiyUB7uAEVsYcHwasP5sTC12H-GdNIZNK3-gA_J5ZEduW-lvndNBYNMuLoaiezJ58tbadpn84UICniF7LYMo3O5ouoj14OXvWtknJjNtk7_Dx_m6sj1alQb837eyXJ437FxfVq8FweiAXgxEFwMgBhbHpoyTquYt-Mk" />
+            </div>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="relative">
+                <div class="absolute -inset-4 bg-primary-container/20 rounded-full animate-ping"></div>
+                <div class="relative bg-primary-container p-4 rounded-full text-on-primary-container shadow-xl">
+                  <span class="material-symbols-outlined text-3xl"
+                    style="font-variation-settings: 'FILL' 1;">home_repair_service</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute bottom-6 left-6 right-6 bg-surface/90 backdrop-blur-md p-6 rounded-lg border border-outline-variant/10">
+              <p class="font-headline font-bold uppercase italic text-on-surface">MEGA Taller Central</p>
+              <p class="text-sm text-on-surface-variant font-label">Tocopilla y Luis Uria</p>
+              <button onclick="window.open('https://maps.app.goo.gl/dwfZKnrKyPvGcHUu9?g_st=aw', '_blank')"
+                class="mt-4 w-full bg-primary-container py-3 font-headline font-black uppercase text-xs tracking-[0.2em] text-on-primary-container">Cómo
+                Llegar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer Placeholder -->
+  <div id="footer-placeholder"></div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
