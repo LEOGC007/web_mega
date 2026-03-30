@@ -8,11 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     Elevando los estándares de la ingeniería automotriz en Cochabamba. Tecnología, pasión y precisión en cada detalle.
                 </p>
                 <div class="flex gap-4">
-                    <a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-[#e5e2e1] hover:text-[#d32f2f] transition-all" href="https://facebook.com" target="_blank">
-                        <span class="material-symbols-outlined text-lg">share</span>
-                    </a>
-                    <a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-[#e5e2e1] hover:text-[#d32f2f] transition-all" href="https://instagram.com" target="_blank">
-                        <span class="material-symbols-outlined text-lg">public</span>
+                    <a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-[#e5e2e1] hover:text-[#d32f2f] transition-all shadow-[0_0_15px_rgba(211,47,47,0)] hover:shadow-[0_0_15px_rgba(211,47,47,0.3)]" href="https://www.tiktok.com/@m.e.g.a.7?_r=1&_t=ZS-957kWpCOsN7" target="_blank" title="TikTok">
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 448 512"><path d="M448 209.91a210.06 210.06 0 0 1 -122.77-39.25V349.38A162.55 162.55 0 1 1 185 188.31V278.2a74.62 74.62 0 1 0 52.23 71.18V0l88 0a121.18 121.18 0 0 0 1.86 22.17h0A122.18 122.18 0 0 0 381 102.39a121.43 121.43 0 0 0 67 20.14Z"/></svg>
                     </a>
                 </div>
             </div>

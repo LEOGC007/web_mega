@@ -1,13 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
     // === Scroll Animations (Intersection Observer) ===
     
-    // Add .reveal class to main sections and content blocks
-    const targetElements = document.querySelectorAll('section, .reveal-target');
-    targetElements.forEach(el => {
-        if (!el.classList.contains('reveal')) {
-            el.classList.add('reveal');
-        }
-    });
+    // Add .reveal class to main sections and content blocks - ONLY on desktop to avoid mobile issues
+    if (window.innerWidth > 768) {
+        const targetElements = document.querySelectorAll('section, .reveal-target');
+        targetElements.forEach(el => {
+            if (!el.classList.contains('reveal')) {
+                el.classList.add('reveal');
+            }
+        });
+    }
 
     const revealOptions = {
         threshold: 0.15,
