@@ -3,15 +3,15 @@ document.addEventListener('DOMContentLoaded', () => {
     <!-- MAIN NAVBAR -->
     <nav class="fixed top-0 w-full z-40 bg-[#131313]/90 backdrop-blur-md shadow-lg border-b border-[#5b403d]/20 transition-all duration-300" id="main-nav">
         <div class="flex justify-between items-center px-6 md:px-8 py-4 max-w-7xl mx-auto">
-            <a href="index.html" class="text-xl md:text-2xl font-black italic text-[#d32f2f] uppercase font-headline tracking-tight hover:text-[#ffb3ac] transition-colors">
-                MEGA TALLER
+            <a href="index.html" class="relative z-[60] flex-shrink-0">
+                <img src="logo.png" alt="MEGA Taller" class="h-10 md:h-12 object-contain drop-shadow">
             </a>
             
             <!-- Desktop Layout -->
             <div class="hidden md:flex items-center space-gap-8 gap-8">
                 <a class="text-[#e5e2e1] hover:text-[#ffb3ac] transition-colors font-headline tracking-tight nav-link" href="index.html">Inicio</a>
                 <a class="text-[#e5e2e1] hover:text-[#ffb3ac] transition-colors font-headline tracking-tight nav-link" href="servicios.html">Servicios</a>
-                <a class="text-[#e5e2e1] hover:text-[#ffb3ac] transition-colors font-headline tracking-tight nav-link" href="escuderia.html">La Escudería</a>
+                <a class="text-[#e5e2e1] hover:text-[#ffb3ac] transition-colors font-headline tracking-tight nav-link" href="escuderia.html">Equipo de Taller</a>
                 <a class="text-[#e5e2e1] hover:text-[#ffb3ac] transition-colors font-headline tracking-tight nav-link" href="ubicacion.html">Ubicación</a>
             </div>
             
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="flex flex-col items-center gap-8 w-full px-8">
             <a class="text-3xl text-[#e5e2e1] hover:text-[#d32f2f] transition-colors font-headline font-black uppercase tracking-tight nav-link w-full text-center py-2 border-b border-[#353534]" href="index.html">Inicio</a>
             <a class="text-3xl text-[#e5e2e1] hover:text-[#d32f2f] transition-colors font-headline font-black uppercase tracking-tight nav-link w-full text-center py-2 border-b border-[#353534]" href="servicios.html">Servicios</a>
-            <a class="text-3xl text-[#e5e2e1] hover:text-[#d32f2f] transition-colors font-headline font-black uppercase tracking-tight nav-link w-full text-center py-2 border-b border-[#353534]" href="escuderia.html">La Escudería</a>
+            <a class="text-3xl text-[#e5e2e1] hover:text-[#d32f2f] transition-colors font-headline font-black uppercase tracking-tight nav-link w-full text-center py-2 border-b border-[#353534]" href="escuderia.html">Equipo de Taller</a>
             <a class="text-3xl text-[#e5e2e1] hover:text-[#d32f2f] transition-colors font-headline font-black uppercase tracking-tight nav-link w-full text-center py-2 border-b border-[#353534]" href="ubicacion.html">Ubicación</a>
             
             <a href="https://wa.me/59177958263" target="_blank" class="bg-primary-container text-on-primary-container px-10 py-4 mt-4 w-full rounded-md font-headline font-black uppercase tracking-widest text-lg shadow-[0px_8px_24px_rgba(211,47,47,0.3)] hover:scale-105 active:scale-95 transition-all outline-none text-center">

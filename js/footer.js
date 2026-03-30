@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     <footer class="bg-[#1c1b1b] w-full border-t border-[#5b403d]/20">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-12 py-16 w-full max-w-7xl mx-auto">
             <div class="space-y-6">
-                <div class="text-xl font-bold text-[#e5e2e1] font-headline italic uppercase tracking-tighter">MEGA TALLER</div>
+                <img src="logo.png" alt="MEGA Taller" class="h-14 object-contain drop-shadow mb-4">
                 <p class="text-[#e5e2e1]/60 font-body text-sm max-w-xs leading-relaxed">
                     Elevando los estándares de la ingeniería automotriz en Cochabamba. Tecnología, pasión y precisión en cada detalle.
                 </p>
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <ul class="space-y-2">
                         <li><a class="text-[#e5e2e1]/60 hover:text-[#d32f2f] font-manrope text-sm transition-colors" href="index.html">Inicio</a></li>
                         <li><a class="text-[#e5e2e1]/60 hover:text-[#d32f2f] font-manrope text-sm transition-colors" href="servicios.html">Servicios</a></li>
-                        <li><a class="text-[#e5e2e1]/60 hover:text-[#d32f2f] font-manrope text-sm transition-colors" href="escuderia.html">La Escudería</a></li>
+                        <li><a class="text-[#e5e2e1]/60 hover:text-[#d32f2f] font-manrope text-sm transition-colors" href="escuderia.html">Equipo de Taller</a></li>
                         <li><a class="text-[#e5e2e1]/60 hover:text-[#d32f2f] font-manrope text-sm transition-colors" href="ubicacion.html">Ubicación</a></li>
                     </ul>
                 </div>
